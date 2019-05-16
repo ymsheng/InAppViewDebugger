@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license            = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Indragie Karunaratne" => "i@indragie.com" }
   spec.social_media_url   = "https://twitter.com/indragie"
-  spec.platform           = :ios, "11.0"
+  spec.platform           = :ios, "8.0"
   spec.swift_version      = '4.2'
   spec.source             = { :git => "https://github.com/indragiek/InAppViewDebugger.git", :tag => "#{spec.version}" }
   spec.source_files       = "InAppViewDebugger/**/*.{h,m,swift}"
