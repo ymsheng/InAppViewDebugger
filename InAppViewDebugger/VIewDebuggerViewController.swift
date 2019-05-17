@@ -9,6 +9,7 @@
 import UIKit
 
 /// Root view controller for the view debugger.
+@available(iOS 11.0, *)
 final class ViewDebuggerViewController: UIViewController, SnapshotViewControllerDelegate, HierarchyTableViewControllerDelegate {
     private let snapshot: Snapshot
     private let configuration: Configuration

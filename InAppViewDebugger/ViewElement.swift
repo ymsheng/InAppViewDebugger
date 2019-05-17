@@ -9,6 +9,7 @@
 import UIKit
 
 /// An element that represents a UIView.
+@available(iOS 9.0, *)
 @objc(IAVDViewElement) public final class ViewElement: NSObject, Element {
     public var label: ElementLabel {
         guard let view = view else {
@@ -70,6 +71,7 @@ import UIKit
     }
 }
 
+@available(iOS 9.0, *)
 fileprivate func getViewController(view: UIView) -> UIViewController? {
     if let viewController = getNearestAncestorViewController(responder: view), viewController.viewIfLoaded == view {
         return viewController

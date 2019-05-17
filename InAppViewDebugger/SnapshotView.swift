@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 
+@available(iOS 11.0, *)
 protocol SnapshotViewDelegate: AnyObject {
     /// Called when an element is select by tapping on it.
     func snapshotView(_ snapshotView: SnapshotView, didSelectSnapshot snapshot: Snapshot)
@@ -27,6 +28,7 @@ protocol SnapshotViewDelegate: AnyObject {
 
 /// A view that renders an interactive 3D representation of a UI element
 /// hierarchy snapshot.
+@available(iOS 11.0, *)
 final class SnapshotView: UIView {
     public weak var delegate: SnapshotViewDelegate?
     

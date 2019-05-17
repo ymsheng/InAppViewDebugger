@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 protocol HierarchyTableViewControllerDelegate: AnyObject {
     func hierarchyTableViewController(_ viewController: HierarchyTableViewController, didSelectSnapshot snapshot: Snapshot)
     func hierarchyTableViewController(_ viewController: HierarchyTableViewController, didDeselectSnapshot snapshot: Snapshot)
@@ -15,6 +16,7 @@ protocol HierarchyTableViewControllerDelegate: AnyObject {
     func hierarchyTableViewControllerWillNavigateBackToPreviousSnapshot(_ viewController: HierarchyTableViewController)
 }
 
+@available(iOS 9.0, *)
 final class HierarchyTableViewController: UITableViewController, HierarchyTableViewCellDelegate, HierarchyTableViewControllerDelegate {
     private static let ReuseIdentifier = "HierarchyTableViewCell"
     

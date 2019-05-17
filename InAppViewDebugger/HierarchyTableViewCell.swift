@@ -8,11 +8,13 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 protocol HierarchyTableViewCellDelegate: AnyObject {
     func hierarchyTableViewCellDidTapSubtree(cell: HierarchyTableViewCell)
     func hierarchyTableViewCellDidLongPress(cell: HierarchyTableViewCell, point: CGPoint)
 }
 
+@available(iOS 9.0, *)
 final class HierarchyTableViewCell: UITableViewCell {
     private lazy var labelStackView: UIStackView = { [unowned self] in
         let stackView = UIStackView()
